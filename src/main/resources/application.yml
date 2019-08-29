@@ -1,0 +1,17 @@
+server:
+  port: 9072
+spring:
+  rabbitmq:
+    host: 192.168.5.179
+    port: 5672
+    virtual-host: /
+    username: guest
+    password: guest
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+    cache:
+      channel:
+        size:
